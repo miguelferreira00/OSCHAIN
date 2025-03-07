@@ -19,9 +19,21 @@ void rcp(int id){
 }
 
 void help(){
-    printf("Informações...");
+    printf("Comandos disponíveis:\n");
+    printf("bal <id> - Ver saldo atual da carteira\n");
+    printf("trx <src_id> <dest_id> <amount> - Criar transação de <src_id> para <dest_id>\n");
+    printf("rcp <id> - Obter comprovativo de transação de um id\n");
+    printf("stat - Mostrar estado atual do sistema\n");
+    printf("end - Terminar o programa\n");
 }
 
 void end(){
-    end();
+    printf("A terminar programa");
+    sleep(1);
+    printf(".");
+    sleep(1);
+    printf(".");
+    sleep(1);
+    printf(".");
+    exit();
 }
